@@ -1,0 +1,21 @@
+
+##########################
+#Neste ficheiro constam apenas as alterações realizadas neste
+#mesmo ficheiro na máquina virtual, já que este é um ficheiro
+#já existente previamente.
+########################
+
+ 
+##################
+#ADICIONADO
+##################
+
+#Caminho do ficheiro: /etc/postfix/main.cf
+
+
+relayhost = [smtp.gmail.com]:587
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+smtp_use_tls = yes
+smtp_tls_security_level = encrypt
